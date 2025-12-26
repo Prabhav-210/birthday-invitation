@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Invitation</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        .content {
+            width: 60%;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .tv {
+            width: 350px;
+            background: #000;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow:
+                0 0 20px rgba(0, 0, 0, 0.8),
+                inset 0 0 10px #555;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .tv::after {
+            content: "";
+            position: absolut
+            bottom -25px;
+            left: 40%;
+            width: 20%;
+            height: 15px;
+            background: #333;
+            border-radius: 10px;
+        }
+
+        .tv video {
+            width: 100%;
+            border-radius: 10px;
+            border: 4px solid #444;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- LEFT: INVITATION -->
+        <div class="content">
+            <h1><u>BIRTHDAY INVITATION</u></h1>
+
+            <h2>Dear Friend,</h2>
+
+            <p>I am good here and hope that you are also good there.</p>
+
+            <p>
+                As you know that my birthday is coming, therefore I want you to come to my birthday party.
+            </p>
+
+            <br>
+
+            <p><b>DAY:</b> Thursday</p>
+            <p><b>DATE:</b> 15-01-2026</p>
+            <p><b>TIME:</b> 6:30 pm</p>
+            <p><b>VENUE:</b> My House</p>
+
+            <br>
+
+            <p><i>I hope you will come to my birthday party.</i></p>
+            <p><i>Give my regards to aunt and uncle.</i></p>
+
+            <br>
+
+            <h3>Your Friend</h3>
+            <h3>Shatakshi Shrey</h3>
+        </div>
+
+        <!-- RIGHT: TV -->
+        <div class="tv">
+            <video autoplay controls loop muted>
+                <source src="birthday.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
